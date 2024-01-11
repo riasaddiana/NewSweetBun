@@ -1,5 +1,5 @@
-import discord
 import os
+import discord
 import praw
 import asyncio
 from keep_alive import keep_alive
