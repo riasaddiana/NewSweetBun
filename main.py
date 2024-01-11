@@ -1,4 +1,5 @@
 import discord
+import os
 import praw
 import asyncio
 from keep_alive import keep_alive
@@ -57,7 +58,6 @@ subreddit_channels = {
     'PornGifs': 1185643561358741544,
     'PornStarHQ': 1185643561358741544,
     'PornStars': 1185643561358741544,
-  
 
     #Cosplay
     'cosplaybabes': 1185643759531204629,
@@ -71,7 +71,6 @@ subreddit_channels = {
     'HENTAI_GIF': 1185643689595392010,
     'jerkbudsHentai': 1185643689595392010,
     'HentaiAndRoleplayy': 1185643689595392010,
-  
 }
 
 # Dictionary to store fetched post IDs for different subreddits
@@ -106,4 +105,4 @@ async def on_ready():
 
 
 # Replace 'YOUR_BOT_TOKEN' with your bot's actual token (as a string)
-bot.run('MTE0NTk4ODgxNTc1Mjc5MDAxNg.GTR8_w.PO_OHKM2Ha5lDhK9Rx2DQGk7iZiiFvMpDeTR7c')
+bot.run(os.environ['token'])
